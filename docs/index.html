@@ -6,48 +6,58 @@
     <title>MacCraft</title>
     <style>
         body {
-            background-color: #121212; /* Dark theme */
-            color: #ffffff;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
-        .button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-        .card {
+        .glass {
             background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
             backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 20px;
-            margin: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            margin: 15px;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        @keyframes fade {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .fade-in {
+            animation: fade 2s;
         }
     </style>
 </head>
 <body>
-    <div class="card">
+    <header class="glass fade-in">
         <h1>Welcome to MacCraft</h1>
-        <a href="#" class="button">Get Started</a>
-        <a href="#" class="button">Learn More</a>
-    </div>
-    <script>
-        // More animations can be added here
-    </script>
+        <nav>
+            <a href="#" class="btn">Home</a>
+            <a href="#" class="btn">About</a>
+            <a href="#" class="btn">Contact</a>
+        </nav>
+    </header>
+    <main class="glass fade-in">
+        <h2>Our Amazing Features</h2>
+        <p>Explore the world of MacCraft with our modern design and intuitive interface. Enjoy seamless performance and stunning visuals.</p>
+    </main>
+    <footer class="glass fade-in">
+        <p>&copy; 2026 MacCraft. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
