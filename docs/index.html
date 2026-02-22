@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>MacCraft Launcher</title>
 </head>
 <body>
-    <h1>Welcome to MacCraft</h1>
-    <p>This is the homepage for MacCraft, a creative project using GitHub Pages.</p>
+    <header>
+        <h1>Welcome to MacCraft Launcher</h1>
+        <p>Your gateway to an amazing Minecraft experience on Mac.</p>
+        <a href="#download" class="download-btn">Download Now</a>
+    </header>
+    <section class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Fast and easy installation</li>
+            <li>Regular updates</li>
+            <li>User-friendly interface</li>
+            <li>Customizable settings</li>
+            <li>Multi-language support</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2026 MacCraft. All rights reserved.</p>
+    </footer>
 </body>
-</html>
+</html> 
+
+/* CSS Styling for the MacCraft launcher website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.download-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 20px;
+}
+
+.features h2 {
+    text-align: center;
+    color: #333;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+} 
+
+@media (max-width: 600px) {
+    header, .features, footer {
+        padding: 10px;
+    }
+    .download-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
